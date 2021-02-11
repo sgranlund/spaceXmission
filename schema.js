@@ -66,7 +66,7 @@ const RootQuery = new GraphQLObjectType({
     rocket: {
       type: RocketType,
       args: {
-        id: { type: GraphQLInt },
+        id: { type: GraphQLString },
       },
       resolve(parent, args) {
         return axios
